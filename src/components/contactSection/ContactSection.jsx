@@ -1,31 +1,35 @@
 import Button from "../button/Button";
 
-function HeroSection() {
+function ContactSection() {
   return (
-    <div className="grid lg:grid-cols-2 gap-20">
-      <section>
-        <img
-          className="mt-8 h-20 w-20 rounded-full object-cover"
-          src="profile_picture.png"
-          alt="Andre Herter"
-        />
-        <h2 className="text-lg mt-4 lg:mt-6 lg:text-2xl">
-          Hi, ich bin <span className="font-bold">Andre</span>.
-        </h2>
-        <h1 className="text-4xl mt-4 lg:mt-6 lg:text-6xl">
-          Ihr neuer <br />
-          <span className="font-bold bg-gradient-to-r from-blue-500 to-green-500 bg-clip-text text-transparent">
-            Frontend Developer.
-          </span>
-        </h1>
-
-        <p className="text-slate-400 mt-6 lg:mt-8 lg:text-lg">
-          Mein Name ist Andre Herter und ich bin Softwareentwickler mit
-          Schwerpunkt auf den Bereich Frontend Web Development aus dem schönen
-          Siegerland. Ich liebe es neue Dinge zu lernen und Ideen in die
-          Realität zu bringen.
+    <div className="flex flex-col-reverse lg:container lg:px-6 lg:mx-auto lg:grid lg:grid-cols-2 lg:gap-x-16 lg:items-center lg:mt-20">
+      <div className="container mx-auto px-6 lg:px-0">
+        <h2 className="text-3xl lg:text-4xl font-bold">Noch Fragen?</h2>
+        <p className="text-slate-400 mt-4 lg:mt-6 lg:text-lg">
+          Zögern Sie nicht mich zu kontaktieren. Nutzen Sie dafür gerne die
+          unten aufgeführte E-Mail Adresse oder schauen Sie auf meinen
+          Social-Media-Profilen vorbei!
         </p>
-
+        <a
+          href="mailto:andre-herter@web.de"
+          className="flex items-center font-medium text-lg mt-8 lg:mt-10 lg:text-xl lg:font-semibold text-blue-500"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth="2.5"
+            stroke="currentColor"
+            className="w-5 h-5 lg:w-6 lg:h-6 mr-2 lg:mr-3"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
+            />
+          </svg>
+          andre-herter@web.de
+        </a>
         <div className="flex gap-6 lg:gap-8 mt-6 lg:mt-10">
           <a href="#">
             <svg
@@ -50,10 +54,18 @@ function HeroSection() {
             </svg>
           </a>
         </div>
+      </div>
+      <div className="bg-slate-900 container mx-auto px-6 lg:px-10 text-center my-40 py-10 lg:py-14 lg:rounded-lg">
+        <h2 className="text-3xl lg:text-4xl font-bold">Weitere Erfahrungen</h2>
+        <p className="text-slate-300 mt-4 lg:mt-8 lg:text-lg">
+          Auf meinem GitHub-Profil finden Sie weitere Projekte, die ich im Laufe
+          der Zeit erstellt habe. Dort können Sie sich auch selbst von meinem
+          Code überzeugen.
+        </p>
         <Button
-          href="#projects"
-          className="mt-10 lg:mt-12 text-sm lg:text-base font-medium bg-blue-600 hover:bg-blue-500 rounded-lg px-5 py-3 flex items-center justify-center"
-          text={"Projekte ansehen"}
+          href="#"
+          className="mt-8 lg:mt:12 text-sm lg:text-base font-medium bg-blue-600 hover:bg-blue-500 rounded-lg px-5 py-3 flex items-center justify-center"
+          text={"Github ansehen"}
           svg={
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -61,26 +73,19 @@ function HeroSection() {
               viewBox="0 0 24 24"
               strokeWidth="1.5"
               stroke="currentColor"
-              className="w5 h-5 ml-2 -mr-1"
+              className="w-5 h-5 ml-2 -mr-1"
             >
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                d="M15.75 17.25 12 21m0 0-3.75-3.75M12 21V3"
+                d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
               />
             </svg>
           }
-        />
-      </section>
-      <div className="flex items-center justify-center">
-        <img
-          src="techs.png"
-          alt="Meine Technologien"
-          className="w-full max-w-[500px]"
         />
       </div>
     </div>
   );
 }
 
-export default HeroSection;
+export default ContactSection;
