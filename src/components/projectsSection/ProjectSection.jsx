@@ -1,4 +1,5 @@
-import Button from "../button/Button";
+import { Link } from "react-router-dom";
+import Button from "../../components/button/Button";
 
 function ProjectSection() {
   return (
@@ -18,9 +19,10 @@ function ProjectSection() {
           <h3 className="text-3xl font-bold mt-6 lg:mt-8">
             Moderne Wetter App
           </h3>
-          <a
+          <Link
+            target="_blank"
+            to="https://andre-herter.github.io/wetter-app"
             className="text-blue-500 font-medium flex items-center text-lg mt-4"
-            href=""
           >
             username.github.io/wetter-app
             <svg
@@ -37,7 +39,7 @@ function ProjectSection() {
                 d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
               />
             </svg>
-          </a>
+          </Link>
           <p className="text-slate-400 mt-4">
             Meine moderne Wetter App zeigt aktuelle Wetterdaten für Städte auf
             der ganzen Welt an. Die App wurde "mobile-first" entwickelt und für
@@ -66,7 +68,8 @@ function ProjectSection() {
             </div>
           </div>
           <Button
-            href="#"
+            href="https://github.com/andre-herter/wetter-app"
+            target={"_blank"}
             className="mt-6 lg:mt:8 text-sm lg:text-base font-medium bg-blue-600 hover:bg-blue-500 rounded-lg px-5 py-3 flex items-center justify-center"
             text={"Code ansehen"}
             svg={
@@ -95,9 +98,10 @@ function ProjectSection() {
             alt="Projekt 3 Sushibar App"
           />
           <h3 className="text-3xl font-bold mt-6 lg:mt-8 ">Sushibar Tokio</h3>
-          <a
+          <Link
+            to="https://andre-herter.github.io/sushibar-website/"
+            target="_blank"
             className="text-blue-500 font-medium flex items-center text-lg mt-4"
-            href=""
           >
             username.github.io/sushibar-app
             <svg
@@ -114,7 +118,7 @@ function ProjectSection() {
                 d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
               />
             </svg>
-          </a>
+          </Link>
           <p className="text-slate-400 mt-4">
             Die Website für die fiktive Sushibar Tokio ist ein moderner
             One-Pager in ansprechendem dunklen Design. Das Layout ist darauf
@@ -134,7 +138,8 @@ function ProjectSection() {
             </div>
           </div>
           <Button
-            href="#"
+            href="https://github.com/andre-herter/sushibar-website"
+            target={"_blank"}
             className="mt-6 lg:mt:8 text-sm lg:text-base font-medium bg-blue-600 hover:bg-blue-500 rounded-lg px-5 py-3 flex items-center justify-center"
             text={"Code ansehen"}
             svg={
@@ -163,9 +168,10 @@ function ProjectSection() {
             alt="Projekt 2 Witze App"
           />
           <h3 className="text-3xl font-bold mt-6 lg:mt-8">Lustige Witze App</h3>
-          <a
+          <Link
+            to="https://andre-herter.github.io/witze-app/"
+            target="_blank"
             className="text-blue-500 font-medium flex items-center text-lg mt-4"
-            href=""
           >
             username.github.io/witze-app
             <svg
@@ -182,7 +188,7 @@ function ProjectSection() {
                 d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
               />
             </svg>
-          </a>
+          </Link>
           <p className="text-slate-400 mt-4">
             Als Kind habe ich Witze-Bücher geliebt - Jetzt habe ich meine eigene
             Witze-App entwickelt! Hierfür habe ich eine öffentliche API
@@ -211,7 +217,8 @@ function ProjectSection() {
             </div>
           </div>
           <Button
-            href="#"
+            href="https://github.com/andre-herter/witze-app"
+            target={"_blank"}
             className="mt-6 lg:mt:8 text-sm lg:text-base font-medium bg-blue-600 hover:bg-blue-500 rounded-lg px-5 py-3 flex items-center justify-center"
             text={"Code ansehen"}
             svg={

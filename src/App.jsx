@@ -1,18 +1,25 @@
 import "./App.css";
-import HeroSection from "./components/heroSection/HeroSection";
-import ProjectSection from "./components/projectsSection/ProjectSection";
-import ContactSection from "./components/contactSection/ContactSection";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import Root from "./routes/root/Root";
+import Homepage from "./routes/homepage/Homepage";
+import Impressum from "./components/impressum/Impressum";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Root />,
+    children: [
+      {
+        index: true,
+        element: <Homepage />,
+      },
+      { path: "impressum", element: <Impressum /> },
+    ],
+  },
+]);
 
 function App() {
-  return (
-    <>
-      <div className="container mx-auto text-left mt-20 lg:mt-32 px-6">
-        <HeroSection />
-        <ProjectSection />
-      </div>
-      <ContactSection />
-    </>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;
