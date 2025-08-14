@@ -4,7 +4,7 @@ function Impressum() {
   return (
     <>
       <Button
-        href="/"
+        href="/react-tailwind-portfolio/"
         className="flex flex-row-reverse gap-2 m-4"
         text={"Zurück"}
         svg={
