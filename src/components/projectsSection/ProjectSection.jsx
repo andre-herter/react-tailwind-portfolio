@@ -13,7 +13,7 @@ function ProjectSection() {
         meiner Fähigkeiten und Erfahrungen machen können.
       </p>
       <div className="mt-20 grid gap-y-20 gap-x-10 md:grid-cols-2 lg:grid-cols-3">
-        <div className="flex flex-col items-start text-left">
+        <div className="flex flex-col items-start text-left justify-between">
           <img
             className="w-full lg:rounded-md"
             src={Project1}
@@ -73,7 +73,7 @@ function ProjectSection() {
           <Button
             href="https://github.com/andre-herter/wetter-app"
             target={"_blank"}
-            className="mt-6 lg:mt:8 text-sm lg:text-base font-medium bg-blue-600 hover:bg-blue-500 rounded-lg px-5 py-3 flex items-center justify-center"
+            className="mt-6 lg:mt-8 text-sm lg:text-base font-medium bg-blue-600 hover:bg-blue-500 rounded-lg px-5 py-3 flex items-center justify-center"
             text={"Code ansehen"}
             svg={
               <svg
@@ -94,7 +94,7 @@ function ProjectSection() {
           />
         </div>
 
-        <div className="flex flex-col items-start text-left">
+        <div className="flex flex-col items-start text-left justify-between">
           <img
             className="w-full lg:rounded-md"
             src={Project3}
@@ -143,7 +143,7 @@ function ProjectSection() {
           <Button
             href="https://github.com/andre-herter/sushibar-website"
             target={"_blank"}
-            className="mt-6 lg:mt:8 text-sm lg:text-base font-medium bg-blue-600 hover:bg-blue-500 rounded-lg px-5 py-3 flex items-center justify-center"
+            className="mt-6 lg:mt-8 text-sm lg:text-base font-medium bg-blue-600 hover:bg-blue-500 rounded-lg px-5 py-3 flex items-center justify-center"
             text={"Code ansehen"}
             svg={
               <svg
@@ -164,7 +164,7 @@ function ProjectSection() {
           />
         </div>
 
-        <div className="flex flex-col items-start text-left">
+        <div className="flex flex-col items-start text-left justify-between">
           <img
             className="w-full lg:rounded-md"
             src={Project2}
@@ -222,7 +222,7 @@ function ProjectSection() {
           <Button
             href="https://github.com/andre-herter/witze-app"
             target={"_blank"}
-            className="mt-6 lg:mt:8 text-sm lg:text-base font-medium bg-blue-600 hover:bg-blue-500 rounded-lg px-5 py-3 flex items-center justify-center"
+            className="mt-6 lg:mt-8 text-sm lg:text-base font-medium bg-blue-600 hover:bg-blue-500 rounded-lg px-5 py-3 flex items-center justify-center"
             text={"Code ansehen"}
             svg={
               <svg
