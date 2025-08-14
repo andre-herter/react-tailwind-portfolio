@@ -1,5 +1,6 @@
 {
   "name": "react-tailwind-portfolio",
+  "homepage": "https://andre-herter.github.io/react-tailwind-portfolio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
