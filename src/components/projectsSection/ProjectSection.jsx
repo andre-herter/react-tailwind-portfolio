@@ -1,5 +1,8 @@
 import { Link } from "react-router-dom";
 import Button from "../../components/button/Button";
+import Project1 from "../../assets/images/projets/1.jpg";
+import Project2 from "../../assets/images/projets/2.jpg";
+import Project3 from "../../assets/images/projets/3.jpg";
 
 function ProjectSection() {
   return (
@@ -13,7 +16,7 @@ function ProjectSection() {
         <div className="flex flex-col items-start text-left">
           <img
             className="w-full lg:rounded-md"
-            src="/projets/1.jpg"
+            src={Project1}
             alt="Projekt 1 Wetter App"
           />
           <h3 className="text-3xl font-bold mt-6 lg:mt-8">
@@ -24,7 +27,7 @@ function ProjectSection() {
             to="https://andre-herter.github.io/wetter-app"
             className="text-blue-500 font-medium flex items-center text-lg mt-4"
           >
-            username.github.io/wetter-app
+            andre-herter.github.io/wetter-app
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -94,7 +97,7 @@ function ProjectSection() {
         <div className="flex flex-col items-start text-left">
           <img
             className="w-full lg:rounded-md"
-            src="/projets/3.jpg"
+            src={Project3}
             alt="Projekt 3 Sushibar App"
           />
           <h3 className="text-3xl font-bold mt-6 lg:mt-8 ">Sushibar Tokio</h3>
@@ -103,7 +106,7 @@ function ProjectSection() {
             target="_blank"
             className="text-blue-500 font-medium flex items-center text-lg mt-4"
           >
-            username.github.io/sushibar-app
+            andre-herter.github.io/sushibar-app
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -164,7 +167,7 @@ function ProjectSection() {
         <div className="flex flex-col items-start text-left">
           <img
             className="w-full lg:rounded-md"
-            src="/projets/2.jpg"
+            src={Project2}
             alt="Projekt 2 Witze App"
           />
           <h3 className="text-3xl font-bold mt-6 lg:mt-8">Lustige Witze App</h3>
@@ -173,7 +176,7 @@ function ProjectSection() {
             target="_blank"
             className="text-blue-500 font-medium flex items-center text-lg mt-4"
           >
-            username.github.io/witze-app
+            andre-herter.github.io/witze-app
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"

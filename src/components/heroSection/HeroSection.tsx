@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import Button from "../../components/button/Button";
+import Profile from "../../assets/images/profile_picture.png";
+import Technology from "../../assets/images/techs.png";
 
 function HeroSection() {
   return (
@@ -7,7 +9,7 @@ function HeroSection() {
       <section>
         <img
           className="mt-8 h-20 w-20 rounded-full object-cover"
-          src="profile_picture.png"
+          src={Profile}
           alt="Andre Herter"
         />
         <h2 className="text-lg mt-4 lg:mt-6 lg:text-2xl">
@@ -53,6 +55,7 @@ function HeroSection() {
         </div>
         <Button
           href="#projects"
+          target={""}
           className="mt-10 lg:mt-12 text-sm lg:text-base font-medium bg-blue-600 hover:bg-blue-500 rounded-lg px-5 py-3 flex items-center justify-center"
           text={"Projekte ansehen"}
           svg={
@@ -75,7 +78,7 @@ function HeroSection() {
       </section>
       <div className="flex items-center justify-center">
         <img
-          src="techs.png"
+          src={Technology}
           alt="Meine Technologien"
           className="w-full max-w-[500px]"
         />

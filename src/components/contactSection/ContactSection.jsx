@@ -64,7 +64,8 @@ function ContactSection() {
           Code überzeugen.
         </p>
         <Button
-          to=""
+          href="https://github.com"
+          target={"_blank"}
           className="mt-8 lg:mt:12 text-sm lg:text-base font-medium bg-blue-600 hover:bg-blue-500 rounded-lg px-5 py-3 flex items-center justify-center"
           text={"Github ansehen"}
           svg={
