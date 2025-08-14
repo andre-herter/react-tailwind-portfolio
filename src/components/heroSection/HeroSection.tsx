@@ -32,7 +32,7 @@ function HeroSection() {
         <div className="flex gap-6 lg:gap-8 mt-6 lg:mt-10">
           <Link to="#">
             <svg
-              className="hover:rotate-[1turn] h-6 w-6 lg:h-8 lg:w-8 fill-slate-400 transition group-hover:fill-slate-300"
+              className="hover:rotate-[0.1turn] h-6 w-6 lg:h-8 lg:w-8 fill-slate-400 transition group-hover:fill-slate-300"
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"
@@ -43,7 +43,7 @@ function HeroSection() {
           </Link>
           <Link to="">
             <svg
-              className="hover:rotate-[1turn] h-6 w-6 lg:h-8 lg:w-8 fill-slate-400 transition group-hover:fill-slate-300"
+              className="hover:rotate-[0.1turn] h-6 w-6 lg:h-8 lg:w-8 fill-slate-400 transition group-hover:fill-slate-300"
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"

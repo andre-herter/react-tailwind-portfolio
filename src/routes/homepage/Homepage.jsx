@@ -5,7 +5,7 @@ import ProjectSection from "../../components/projectsSection/ProjectSection";
 function Home() {
   return (
     <>
-      <div className="container mx-auto text-left mt-20 lg:mt-32 px-6">
+      <div className="container mx-auto text-left mt-20 lg:mt-20 px-10">
         <HeroSection />
         <ProjectSection />
       </div>
