@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Root from "./routes/root/Root";
 import Homepage from "./routes/homepage/Homepage";
 import Impressum from "./components/impressum/Impressum";
+import NotFound from "./routes/notFound/NotFound";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
           <Route index element={<Homepage />} />
           <Route path="impressum" element={<Impressum />} />
         </Route>
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   );
